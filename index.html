@@ -1,0 +1,50 @@
+<!-- DOM Manipulation -->
+<!-- Selecting and manipulating elements -->
+
+
+
+<!-- Select an html element by its id and change its text content -->
+ <!-- Select an html element by its class and change its background color -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+
+     <style>
+        .changeBg{
+            height: 200px;
+            width: 300px;
+            border: 2px solid black;
+            background-color: blue;
+        }
+     </style>
+ </head>
+
+ <body>
+    <div class="changeBg" ></div>
+ 
+     <h1 id="heading">WELCOME IN JAVASCRIPT</h1>
+
+     <h2 id="heading2">I am Rahul Singh</h2>
+ 
+
+ 
+     <script>
+         // Update text content of heading element with id 'heading'
+         const heading = document.querySelector('#heading');
+         heading.textContent = "Hello World";
+ 
+         // Update text content of heading2 element with id 'heading2'
+         const heading2 = document.querySelector('#heading2');
+         heading2.textContent = "My name is Rahul Singh";
+ 
+         // Select element by class 'changeBg' and change its background color
+         const changeBg = document.querySelector('.changeBg');
+         changeBg.style.backgroundColor = "aquamarine";
+     </script>
+ </body>
+ </html>
+ 
